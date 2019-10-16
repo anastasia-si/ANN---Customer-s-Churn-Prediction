@@ -85,5 +85,5 @@ best_parameters = grid_search.best_params_
 best_accuracy = grid_search.best_score_
 
 # Predicting the Test set results
-y_pred = classifier.predict(X_test)
+y_pred = grid_search.predict(X_test)
 y_pred = (y_pred > 0.5)
